@@ -1,0 +1,32 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 14px;
+}
+
+li a {
+    color: rgb(255, 251, 0);
+}
+
+a:visited, li a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(184, 240, 128);
+}
