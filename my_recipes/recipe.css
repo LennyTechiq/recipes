@@ -41,3 +41,16 @@ a:visited, li a {
 a:hover {
     color: rgb(184, 240, 128);
 }
+
+.flex-container {
+    display: flex;
+}
+
+.flex-item {
+    margin: 25px;
+}
+
+.flex-container-2 {
+    display: flex;
+    flex-direction: column;
+}
