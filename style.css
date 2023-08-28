@@ -71,3 +71,13 @@ a:hover {
 .flex-item.news h3 {
     padding-left: 12px;
 }
+
+@media only screen and (max-width: 900px) {
+    .flex-item.news {
+        flex-direction: column;
+    }
+
+    .flex-item {
+        margin: 10px;
+    }
+}
