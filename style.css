@@ -17,13 +17,13 @@ body::-webkit-scrollbar {
     display: none;
   }
 
-.flex-container {
-    display: flex;
-}  
-
 h1 {
     text-align: center;
     font-size: 40px;
+}
+
+h3 {
+    padding-left: 10px;
 }
 
 ul {
@@ -45,4 +45,29 @@ a:visited, li a {
 
 a:hover {
     color: rgb(184, 240, 128);
+}
+
+.flex-container {
+    display: flex;
+}  
+
+.flex-item {
+    margin: 35px;
+    background-color: rgb(117, 18, 18);
+    padding-right: 20px;
+}
+
+.flex-item.news {
+    display: flex;
+    flex: 2 1 0%;
+}
+
+.news-image img{
+    height: auto;
+    width: 200px;
+    padding: 12px;
+}
+
+.flex-item.news h3 {
+    padding-left: 12px;
 }
