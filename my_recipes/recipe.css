@@ -3,9 +3,18 @@
 }
 
 body {
-    background-color: rgb(71, 43, 0);
+    background-image: url("https://images.ctfassets.net/l5fkpck1mwg3/3dASaaG0DG3aGDOikeVEHd/02a3e6e0e28393c96b5f60fbcf47de41/BWW_Omni_Web_BulleitBourbonBBQ_MainBanner2_DesktopBackground_4000x1650.jpg?&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #ffff;
+    margin: 20px;
+    height: 100%;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+  }
 
 .main {
     width: 700px;
