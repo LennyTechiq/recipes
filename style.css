@@ -11,11 +11,57 @@ body {
     background-color: #cccccc;
     height: 637px;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body::-webkit-scrollbar {
     display: none;
   }
+
+.navbar {
+    display: flex;
+    margin: 35px;
+    margin-top: 4px;
+    border-width: thick;
+    border-color: rgb(104, 34, 34);
+    padding-left: 15px;
+    height: 70px;
+}
+
+.navbar h1 {
+    margin-top: 12px;
+}
+
+.nav-content {
+    display: flex;
+    gap: 550px;    
+}
+
+.navbar ul {
+    display: flex;
+    
+}
+
+.nav-content .buttons {
+    margin-top: 12px;
+} 
+
+.nav-content button {
+    width: 100px;
+    background-color: rgb(117, 18, 18);
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    border-radius: 3px;
+}
+
+.nav-content button:hover {
+    background-color:rgb(255, 123, 0);
+    color: rgb(117, 18, 18);
+    border: 2px;
+}
 
 h1 {
     text-align: center;
@@ -34,16 +80,16 @@ li {
     padding: 14px;
 }
 
-li a {
+li a, .flex-item-2 h3 {
     color: rgb(255, 251, 0);
     font-weight: bold;
 }
 
-a:visited, li a {
+a:visited, li a, .flex-item-2 a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, .flex-item-2 h3:hover {
     color: rgb(184, 240, 128);
 }
 
@@ -57,7 +103,12 @@ a:hover {
     padding-right: 20px;
 }
 
+.flex-item.top-recipe {
+    max-height: 400px;
+}
+
 .flex-item.news {
+    padding: 12px;
     display: flex;
     flex: 2 1 0%;
 }
@@ -79,5 +130,37 @@ a:hover {
 
     .flex-item {
         margin: 10px;
+    }
+}
+
+.sub-title h2 {
+    text-align: center;
+}
+
+.flex-container-2 {
+    margin: 35PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background-color: rgb(117, 18, 18);
+    padding: 12px;
+}
+
+.flex-item-2 img {
+    height: auto;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.flex-item-2 h3 {
+    padding-left:  0;
+}
+
+@media only screen and (max-width: 900px) {
+    .flex-container-2 {
+        flex-direction: column;
+        width: 70%;
+        align-self: center;
     }
 }

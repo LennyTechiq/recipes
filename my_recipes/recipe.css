@@ -68,6 +68,9 @@ a:hover {
 }
 
 @media only screen and (max-width: 600px) {
+    .main {
+        width: 75%;
+    }
     .flex-container {
         flex-direction: column;
     }
