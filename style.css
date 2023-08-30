@@ -193,6 +193,12 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
     margin-bottom: 12px;
 }
 
+.flex-item-2:hover {
+    opacity: 0.8;
+    transition-duration: 500ms;
+    border: 2px solid rgb(255, 255, 255);
+}
+
 .flex-item-2 img {
     height: auto;
     width: 350px;
