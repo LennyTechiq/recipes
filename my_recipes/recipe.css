@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #ffff;
+    color: #ffffff;
     margin: 20px;
     height: 100%;
 }
@@ -17,9 +17,9 @@ body::-webkit-scrollbar {
   }
 
 .main {
-    width: 60%;
+    width: 50%;
     margin: auto;
-    background-color: #000000;
+    background-color: rgb(117, 18, 18);
     padding: 25px;
     border-radius: 25px;
     display: flex;
@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
 }
 
 img {
-    height: auto;
+    max-height: 300px;
     width: 300px;
     border-radius: 5px;
 }
@@ -50,6 +50,7 @@ a:hover {
 
 .flex-item {
     margin: 25px;
+    margin-top: 0;
 }
 
 .flex-container-2 {

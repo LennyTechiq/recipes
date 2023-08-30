@@ -11,6 +11,8 @@ body {
     background-color: #cccccc;
     margin: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -22,10 +24,10 @@ body::-webkit-scrollbar {
     display: flex;
     justify-content: space-between;
     padding: 8px;
-    margin: 35px;
     margin-top: 0;
     background-color: #350000;
     height: 60px;
+    width: 1200px;
     border-radius: 0 0 12px 12px;
     box-shadow: 2px 4px 16px rgba(0,0,0,.6);
 }
@@ -49,21 +51,24 @@ body::-webkit-scrollbar {
     gap: 16px;
 }
 
-.header .btn {
-    width: 100px;
-    background-color: rgb(117, 18, 18);
-    padding: 8px 24px;
-    font-size: 14px;
-    font-weight: 700;
-    border: none;
-    border-radius: 8px;
+.btn {
+    border: 2px solid black;
+    background-color: transparent;
+    padding: 14px 28px;
+    font-size: 16px;
+    font-weight: 600;
     cursor: pointer;
+    border-color: #ff9800;
+    color: orange;
+    width: fit-content;
+    border-radius: 8px;
 }
 
-.header .btn:hover {
+.btn:hover {
     background-color:rgb(255, 123, 0);
     color: rgb(117, 18, 18);
     border: 2px;
+    transition-duration: 600ms;
 }
 
 .profile-image {
@@ -79,6 +84,8 @@ body::-webkit-scrollbar {
 h1 {
     text-align: center;
     font-size: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 h3 {
@@ -108,22 +115,24 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 
 .flex-container {
     display: flex;
+    justify-content: space-between;
+    width: 1200px;
 }  
 
 .flex-item {
-    margin: 35px;
     background-color: rgb(117, 18, 18);
     padding-right: 20px;
 }
 
 .flex-item.top-recipe {
-    max-height: 400px;
+    max-height: inherit;
+    margin-right: 35px;
 }
 
 .flex-item.news {
     padding: 12px;
     display: flex;
-    flex: 2 1 0%;
+    width: 1000px;
 }
 
 .news-image img{
@@ -137,8 +146,21 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 }
 
 @media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .header {
+        width: 95%;
+    }
+
+    .flex-container {
+        width: 95%;
+    }
+
     .flex-item.news {
         flex-direction: column;
+        width: 500px;
     }
 
     .flex-item {
@@ -153,14 +175,22 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 }
 
 .flex-container-2 {
-    margin: 35PX;
-    margin-bottom: 60px;
+    width: 1200px;
     display: flex;
+    flex-flow: wrap;
     justify-content: space-between;
-    align-items: center;
     border-radius: 12px;
     background-color: rgb(117, 18, 18);
-    padding: 12px;
+    margin-bottom: 24px;
+    padding: 14px;
+}
+
+.flex-item-2 {
+    border: 2px solid rgb(255, 123, 0);
+    border-radius: 8px;
+    padding: 8px;
+    text-shadow: 2px 2px black;
+    margin-bottom: 12px;
 }
 
 .flex-item-2 img {
@@ -176,8 +206,40 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 @media only screen and (max-width: 900px) {
     .flex-container-2 {
         flex-direction: column;
-        width: 70%;
+        width: 80%;
         align-self: center;
+    }
+
+    .flex-item-2 {
+        margin: 6px;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1230px;
+    margin-bottom: 60px;
+    border-radius: 12px;
+    background-color: rgb(117, 18, 18);
+    gap: 500px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 92%;
+        gap: 50px;
+    }
+
+    .container .text {
+        width: 250px;
+    }
+
+    .btn {
+        padding: 11px 16px;
     }
 }
 
