@@ -212,7 +212,7 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 @media only screen and (max-width: 900px) {
     .flex-container-2 {
         flex-direction: column;
-        width: 80%;
+        width: 378px;
         align-self: center;
     }
 
