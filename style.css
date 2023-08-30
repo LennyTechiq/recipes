@@ -215,6 +215,7 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
         flex-direction: column;
         width: 365px;
         padding: 0;
+        margin-left: 14px;
     }
 
     .flex-item-2 {
@@ -248,6 +249,7 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
     .container {
         width: 365px;
         gap: 50px;
+        margin-left: 14px;
     }
 
     .container .text {
