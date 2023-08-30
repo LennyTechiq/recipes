@@ -116,7 +116,7 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 
 .flex-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 1200px;
 }  
 
@@ -156,16 +156,16 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
     }
 
     .flex-container {
-        width: 95%;
+        width: 350px;
+    }
+
+    .flex-item.top-recipe {
+        margin-right: 0;
     }
 
     .flex-item.news {
         flex-direction: column;
-        width: 500px;
-    }
-
-    .flex-item {
-        margin: 10px;
+        width: 400px;
     }
 }
 
@@ -214,7 +214,6 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
     .flex-container-2 {
         flex-direction: column;
         width: 375px;
-        margin-left: 50px;
     }
 
     .flex-item-2 {
@@ -235,11 +234,14 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
     padding-bottom: 14px;
 }
 
+.container h4 {
+    font-size: 20px;
+}
+
 @media only screen and (max-width: 900px) {
     .container {
         width: 400px;
         gap: 50px;
-        margin-left: 50px;
     }
 
     .container .text {
