@@ -148,15 +148,15 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 
 @media only screen and (max-width: 900px) {
     h1 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .header {
-        width: 95%;
+        width: 365px;
     }
 
     .flex-container {
-        width: 350px;
+        width: 365px;
     }
 
     .flex-item.top-recipe {
@@ -213,11 +213,17 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 @media only screen and (max-width: 900px) {
     .flex-container-2 {
         flex-direction: column;
-        width: 375px;
+        width: 365px;
+        padding: 0;
     }
 
     .flex-item-2 {
         margin: 6px;
+        width: 330px;
+    }
+
+    .flex-item-2 img {
+        width: 325px;
     }
 }
 
@@ -240,7 +246,7 @@ a:hover, .flex-item-2 h3:hover, .footer a:hover {
 
 @media only screen and (max-width: 900px) {
     .container {
-        width: 400px;
+        width: 365px;
         gap: 50px;
     }
 
